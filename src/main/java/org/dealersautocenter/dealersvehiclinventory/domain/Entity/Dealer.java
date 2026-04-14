@@ -16,7 +16,7 @@ public class Dealer extends BaseTenantEntity {
     @GeneratedValue
     private UUID id;
     private String name;
-    private String Email;
+    private String email;
     @Enumerated(value = EnumType.STRING)
     private SubscriptionType subscriptionType;
 }
