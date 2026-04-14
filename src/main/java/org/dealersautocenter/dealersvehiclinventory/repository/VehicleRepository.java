@@ -9,4 +9,5 @@ import java.util.UUID;
 
 public interface VehicleRepository extends JpaRepository<Vehicle, UUID>, JpaSpecificationExecutor<Vehicle> {
 Optional<Vehicle> findByIdAndTenantId(UUID id, String tenantId);
+boolean existsById(UUID id);
 }
